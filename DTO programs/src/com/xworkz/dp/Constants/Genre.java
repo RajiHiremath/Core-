@@ -1,0 +1,7 @@
+package com.xworkz.dp.Constants;
+
+public enum Genre 
+{
+  ACTION,CRIME,HORROR,ROMANTIC,THRILLER,ANIMATION,DRAMA,COMEDY,
+  BIOGRAPHIC,HISTORY,INSPRIED;
+}
