@@ -6,7 +6,6 @@ import com.xworkz.rules.marriage.MarriageRule;
 import com.xworkz.rules.traffic.TrafficRule;
 import com.xworkz.rules.voting.VotingRule;
 
-
 public class RulesStarter {
 
 	public static void main(String[] args) {
