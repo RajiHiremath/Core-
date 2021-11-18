@@ -2,7 +2,6 @@ package com.xworkz.rules;
 
 import com.xworkz.rules.hospital.Hospital;
 
-
 public class HospitalScammer 
 {
 
