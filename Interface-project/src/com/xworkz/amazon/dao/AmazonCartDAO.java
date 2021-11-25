@@ -8,10 +8,6 @@ public interface AmazonCartDAO
 	{
 		
 	}
-	
-		
-	
-	
 }
 
 
