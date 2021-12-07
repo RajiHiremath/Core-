@@ -1,6 +1,7 @@
 package com.xworkz.car;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 public class CarScammer {
 
 	public static void main(String[] args) {
@@ -60,22 +61,99 @@ public class CarScammer {
 		String carName53 = "Robocop";
 		String carName54 = " Viper ";
 		String carName55 = "Rocky";
+		String carName56="Oatmeal";
+		String carName57="Audi A1 2016";
+		String carName58="Underdog";
+		String carName59="Tata Skoda";
+		String carName60="volvo s90";
+
+		Collection<String> collection = new ArrayList<String>();
 		
-
-		Collection collection = new ArrayList();
-		collection.add(carName10);
+		collection.add(carName1);
+		collection.add(carName2);
 		collection.add(carName3);
-		collection.add(carName14);
-		collection.add(carName24);
-		collection.add(carName50);
-		collection.add(carName29);
-		collection.add(carName47);
-		collection.add(carName52);
-		collection.add(carName45);
+		collection.add(carName4);
+		collection.add(carName5);
+		collection.add(carName6);
+		collection.add(carName7);
+		collection.add(carName8);
 		collection.add(carName9);
+		collection.add(carName10);
+		collection.add(carName11);
+		collection.add(carName12);
+		collection.add(carName13);
+		collection.add(carName14);
+		collection.add(carName15);
+		collection.add(carName16);
+		collection.add(carName17);
+		collection.add(carName18);
+		collection.add(carName19);
+		collection.add(carName20);
+		collection.add(carName21);
+		collection.add(carName22);
+		collection.add(carName23);
+		collection.add(carName24);
+		collection.add(carName25);
+		collection.add(carName26);
+		collection.add(carName27);
+		collection.add(carName28);
+		collection.add(carName29);
+		collection.add(carName30);
+		collection.add(carName31);
+		collection.add(carName32);
+		collection.add(carName33);
+		collection.add(carName34);
+		collection.add(carName35);
+		collection.add(carName36);
+		collection.add(carName37);
+		collection.add(carName38);
+		collection.add(carName39);
+		collection.add(carName40);
+		collection.add(carName41);
+		collection.add(carName42);
+		collection.add(carName43);
+		collection.add(carName44);
+		collection.add(carName45);
+		collection.add(carName46);
+		collection.add(carName47);
+		collection.add(carName48);
+		collection.add(carName49);
+		collection.add(carName50);
+		collection.add(carName51);
+		collection.add(carName52);
+		collection.add(carName53);
+		collection.add(carName54);
+		collection.add(carName55);
+		collection.add(carName56);
+		collection.add(carName57);
+		collection.add(carName58);
+		collection.add(carName59);
+		collection.add(carName60);
 
-		System.out.println(collection.toString());
+		System.out.println(collection);
 		System.out.println("Number of Car names added :" + collection.size());
+		
+		Iterator<String> itr =collection.iterator();
+
+  		boolean check = itr.hasNext();
+  		System.out.println(check);
+
+  		while (itr.hasNext()) 
+  		{
+  			System.out.println(itr.next());
+  		}
+
+  		boolean checks = collection.remove(carName60);
+  		System.out.println(checks);
+
+  		boolean checked = collection.contains(carName60);
+  		System.out.println(checked);
+
+  		boolean contains = collection.isEmpty();
+  		System.out.println(contains);
+
+  		collection.clear();
+  		System.err.println("collection is cleared"); 
      }
 
 }

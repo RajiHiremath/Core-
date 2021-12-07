@@ -1,6 +1,7 @@
 package com.xworkz.bikes;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 public class BikesScammer {
 
 	public static void main(String[] args) {
@@ -55,21 +56,107 @@ public class BikesScammer {
 		String bike48="Meteor 390";
 		String bike49="bullet 320";
 		String bike50="RE 650";
+		String bike51="Beneli brings";
+		String bike52="Komaki x-GtKm";
+		String bike53="KTM 390";
+		String bike54="R15 v3";
+		String bike55="Bajaj Pulsar";
+		String bike56="TVS excel";
+		String bike57="Yamaha FZS";
+		String bike58="Yukie";
+		String bike59="TVS";
+		String bike60="hero x-pulse";
 		
-		Collection collection=new ArrayList();
+		
+		
+		Collection<String> collection=new ArrayList<String>();
+		
 		collection.add(bike1);
-		collection.add(bike15);
-		collection.add(bike9);
-		collection.add(bike21);
-		collection.add(bike25);
+		collection.add(bike2);
+		collection.add(bike3);
 		collection.add(bike4);
+		collection.add(bike5);
+		collection.add(bike6);
+		collection.add(bike7);
+		collection.add(bike8);
+		collection.add(bike9);
 		collection.add(bike10);
-		collection.add(bike40);
-		collection.add(bike50);
-		collection.add(bike23);
+		collection.add(bike11);
+		collection.add(bike12);
+		collection.add(bike13);
+		collection.add(bike14);
+		collection.add(bike15);
 		collection.add(bike16);
+		collection.add(bike17);
+		collection.add(bike18);
+		collection.add(bike19);
+		collection.add(bike20);
+		collection.add(bike21);
+		collection.add(bike22);
+		collection.add(bike23);
+		collection.add(bike24);
+		collection.add(bike25);
+		collection.add(bike26);
+		collection.add(bike27);
+		collection.add(bike28);
+		collection.add(bike29);
+		collection.add(bike30);
+		collection.add(bike31);
+		collection.add(bike32);
+		collection.add(bike33);
+		collection.add(bike34);
+		collection.add(bike35);
+		collection.add(bike36);
+		collection.add(bike37);
+		collection.add(bike38);
+		collection.add(bike39);
+		collection.add(bike40);
+		collection.add(bike41);
+		collection.add(bike42);
+		collection.add(bike43);
+		collection.add(bike44);
+		collection.add(bike45);
+		collection.add(bike46);
+		collection.add(bike47);
+		collection.add(bike48);
+		collection.add(bike49);
+		collection.add(bike50);
+		collection.add(bike51);
+		collection.add(bike52);
+		collection.add(bike53);
+		collection.add(bike54);
+		collection.add(bike55);
+		collection.add(bike56);
+		collection.add(bike57);
+		collection.add(bike58);
+		collection.add(bike59);
+		collection.add(bike60);
 		
-		System.out.println(collection.toString());
+		
+		System.out.println(collection);
 	    System.out.println("Number of bikes added :" + collection.size());
+	    
+	    Iterator<String> itr =collection.iterator();
+
+	  		boolean check = itr.hasNext();
+	  		System.out.println(check);
+
+	  		while (itr.hasNext()) 
+	  		{
+	  			System.out.println(itr.next());
+	  		}
+
+	  		boolean checks = collection.remove(bike60);
+	  		System.out.println(checks);
+
+	  		boolean checked = collection.contains(bike60);
+	  		System.out.println(checked);
+
+	  		boolean contains = collection.isEmpty();
+	  		System.out.println(contains);
+
+	  		collection.clear();
+	  		System.err.println("collection is cleared"); 
+	    
 	}
 }

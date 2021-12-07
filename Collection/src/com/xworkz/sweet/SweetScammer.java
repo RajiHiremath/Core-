@@ -1,6 +1,7 @@
 package com.xworkz.sweet;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 public class SweetScammer {
 
 	public static void main(String[] args) {
@@ -67,21 +68,92 @@ public class SweetScammer {
 		String sweet60="Kaju anjur burfi";
 		
 		
-		Collection collection=new ArrayList();
+		Collection<String> collection=new ArrayList<String>();
 		collection.add(sweet1);
+		collection.add(sweet2);
+		collection.add(sweet3);
+		collection.add(sweet4);
 		collection.add(sweet5);
-		collection.add(sweet19);
-		collection.add(sweet21);
-		collection.add(sweet25);
-		collection.add(sweet14);
+		collection.add(sweet6);
+		collection.add(sweet7);
+		collection.add(sweet8);
+		collection.add(sweet9);
 		collection.add(sweet10);
+		collection.add(sweet11);
+		collection.add(sweet12);
+		collection.add(sweet13);
+		collection.add(sweet14);
+		collection.add(sweet15);
+		collection.add(sweet16);
+		collection.add(sweet17);
+		collection.add(sweet18);
+		collection.add(sweet19);
+		collection.add(sweet20);
+		collection.add(sweet21);
+		collection.add(sweet22);
+		collection.add(sweet23);
+		collection.add(sweet24);
+		collection.add(sweet25);
+		collection.add(sweet26);
+		collection.add(sweet27);
+		collection.add(sweet28);
+		collection.add(sweet29);
+		collection.add(sweet30);
+		collection.add(sweet31);
+		collection.add(sweet32);
+		collection.add(sweet33);
+		collection.add(sweet34);
+		collection.add(sweet35);
+		collection.add(sweet36);
+		collection.add(sweet37);
+		collection.add(sweet38);
+		collection.add(sweet39);
+		collection.add(sweet40);
+		collection.add(sweet41);
+		collection.add(sweet42);
+		collection.add(sweet43);
+		collection.add(sweet44);
 		collection.add(sweet45);
+		collection.add(sweet46);
+		collection.add(sweet47);
+		collection.add(sweet48);
+		collection.add(sweet49);
 		collection.add(sweet50);
+		collection.add(sweet51);
+		collection.add(sweet52);
+		collection.add(sweet53);
+		collection.add(sweet54);
+		collection.add(sweet55);
+		collection.add(sweet56);
+		collection.add(sweet57);
+		collection.add(sweet58);
+		collection.add(sweet59);
+		collection.add(sweet60);
 		
-		System.out.println(collection.toString());
-	    System.out.println("Number of sweets names added :" + collection.size());
+		System.out.println(collection);
+		System.out.println("Number of sweets names added :" + collection.size());
 		
+		Iterator<String> itr =collection.iterator();
+
+  		boolean check = itr.hasNext();
+  		System.out.println(check);
+
+  		while (itr.hasNext()) 
+  		{
+  			System.out.println(itr.next());
+  		}
+
+  		boolean checks = collection.remove(sweet55);
+  		System.out.println(checks);
+
+  		boolean checked = collection.contains(sweet55);
+  		System.out.println(checked);
+
+  		boolean contains = collection.isEmpty();
+  		System.out.println(contains);
+
+  		collection.clear();
+  		System.err.println("collection is cleared"); 
 
 	}
-
 }
