@@ -65,7 +65,7 @@ public class PhoneScammer {
 		System.out.println(set1.size());
 		System.out.println("acending order of set");
 		
-		Comparator comparator2=new PhoneNumbers();
+		//Comparator comparator2=new PhoneNumbers();
 
 		Iterator<Long> itr2 = set1.iterator();
 		while (itr2.hasNext()) 
@@ -80,8 +80,8 @@ public class PhoneScammer {
 		Iterator<Long> itr3 = collection.iterator();
 		while (itr3.hasNext())
 		{
-			Long type1 = itr3.next();
-			System.out.println(type1);
+			Long type= itr3.next();
+			System.out.println(type);
 		}
 
 	}

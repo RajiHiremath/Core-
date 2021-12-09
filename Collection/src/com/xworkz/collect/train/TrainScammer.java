@@ -51,7 +51,8 @@ public class TrainScammer {
 
 		System.err.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("SET Collection");
-		Set<Integer> set1 = new TreeSet<Integer>();
+		
+		Set<Integer> set1 = new TreeSet<Integer>(comparator);
 		set1.add(80500);
 		set1.add(72047);
 		set1.add(93806);
@@ -62,13 +63,12 @@ public class TrainScammer {
 		set1.add(98519);
 		set1.add(72563);
 		set1.add(79456);
-
+     
 		System.out.println(set1.size());
 		System.out.println("acending order of set");
 		
 		Comparator comparator2=new TrainNoAcs();
-		
-        Iterator<Integer> itr2 = set1.iterator();
+		Iterator<Integer> itr2 = set1.iterator();
 		while (itr2.hasNext()) 
 		{
 			System.out.println(itr2.next());

@@ -9,11 +9,11 @@ public class PhoneNumbersDec implements Comparator<Long>{
 		{
 			System.out.println("two objects are equal");
 		}
-		if(o2 < o1)
+		if(o2 > o1)
 		{
 			System.out.println("o2 is greater than o1");
 		}
-		if(o2 > o1)
+		if(o2 < o1)
 		{
 			System.out.println("o2 is lesser than o1");
 		}

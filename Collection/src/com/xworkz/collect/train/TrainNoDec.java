@@ -12,13 +12,13 @@ public class TrainNoDec implements Comparator<Integer>
 		{
 			System.out.println("two objects are equal");
 		}
-		if(o1>o2)
+		if(o2>o1)
 		{
-			System.out.println("o1 is greater than the o2");
+			System.out.println("o2 is greater than the o1");
 		}
-		if(o1<o2)
+		if(o2<o1)
 		{
-			System.out.println("o1 is lesser than the o2");
+			System.out.println("o2 is lesser than the o1");
 		}
 		return 0;
 	}
