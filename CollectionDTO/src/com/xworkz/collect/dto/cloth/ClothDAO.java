@@ -30,7 +30,7 @@ return false;
 }
 public boolean findMatchingCaseInsensitive(String cloth) 
 {
-if(cloth !=null)
+if(cloth!=null)
 {
 	 Iterator<String> itr=cloths.iterator();
 	 while(itr.hasNext())
