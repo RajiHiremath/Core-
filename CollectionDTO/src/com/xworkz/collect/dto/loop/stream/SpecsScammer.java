@@ -32,6 +32,12 @@ public class SpecsScammer {
 		List<String> temp1 = specs2.sorted((e1, e2) -> e2.compareTo(e1)).collect(Collectors.toList());
 		temp1.forEach((e) -> System.out.println(e));
 
+		System.err.println("ascending order of all upper cases");
+		Stream<String> specs3 = Stream.of("Ray-Ban", "Fastrack", "IDEE", "Polaroid", "Vogue", "Police", "Prada",
+				"Oakley", "Lapectus", "Gucci", "CK Jeans", "Image", "Scott", "Lacoste", "Esprit", "Carrera", "Coach",
+				"Fendi", "Nike", "Dior");
+		List<String> temp3 =specs3.sorted().map(e -> e.toUpperCase()).collect(Collectors.toList());
+		temp3.forEach((e) -> System.out.println(e));
 	}
 
 	}
