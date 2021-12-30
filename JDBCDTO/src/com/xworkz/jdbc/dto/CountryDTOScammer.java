@@ -18,6 +18,10 @@ public class CountryDTOScammer {
 		boolean delete=dao.deleteById(3);
 		System.out.println(delete); 
 		
+		 
+		 dao.displayById(3);
+		 dao.displayAll();
+		 dao.displayTotalRows();
 
 	}
 

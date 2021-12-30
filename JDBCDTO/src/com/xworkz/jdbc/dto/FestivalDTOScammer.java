@@ -17,6 +17,10 @@ public class FestivalDTOScammer {
 		
 		boolean found=dao.deleteById(2);
 		 System.out.println(found);
+		 
+		 dao.displayById(2);
+		 dao.displayAll();
+		 dao.displayTotalRows();
 	}
 
 }

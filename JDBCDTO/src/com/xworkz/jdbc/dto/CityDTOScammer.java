@@ -1,5 +1,4 @@
 package com.xworkz.jdbc.dto;
-
 import com.xworkz.jdbc.dao.CityDAO;
 
 public class CityDTOScammer {
@@ -16,6 +15,9 @@ public class CityDTOScammer {
       
       boolean delete=dao.deleteById(3);
 		 System.out.println(delete);
+		 
+		 boolean found=dao.deleteById(1);
+		 System.out.println(found);
 	}
 
 }

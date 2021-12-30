@@ -18,6 +18,9 @@ public class IceCreamScammer {
 		boolean delete=iceDAO.deleteById(1);
 		System.out.println(delete); 
 
+		iceDAO.displayById(1);
+		iceDAO.displayAll();
+		iceDAO.displayTotalRows();
 	}
 
 }

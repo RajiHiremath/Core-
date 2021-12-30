@@ -20,6 +20,9 @@ public class StateScammer {
 		boolean element=stateDAO.deleteById(4);
 		System.out.println(element); 
 
+		stateDAO.displayById(2);
+		stateDAO.displayAll();
+		stateDAO.displayTotalRows();
 	}
 
 }
