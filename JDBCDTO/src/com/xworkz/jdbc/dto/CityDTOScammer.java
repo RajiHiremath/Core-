@@ -18,6 +18,10 @@ public class CityDTOScammer {
 		 
 		 boolean found=dao.deleteById(1);
 		 System.out.println(found);
+		 
+		 dao.displayById(2);
+		 dao.displayAll();
+		 dao.displayTotalRows();
 	}
 
 }
