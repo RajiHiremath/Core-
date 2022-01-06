@@ -410,7 +410,7 @@ public class TrainDAO
 			ResultSet rs=pstmt.executeQuery();
 			while(rs.next())
 			{
-				int rows=rs.getRow();
+				int rows=rs.getInt(1);
 				System.out.println("total rows in table is:" +rows);
 				
 			}
